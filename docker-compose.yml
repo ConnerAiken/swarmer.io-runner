@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  ant:
+    container_name: ant
+    restart: always
+    build: .
+    ports:
+      - "8080:8080"

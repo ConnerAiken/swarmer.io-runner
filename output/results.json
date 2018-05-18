@@ -1,0 +1,1 @@
+{"activity":["### STEP 1: Load 'http://ftsandbox.com'"],"events":[{"event":"page.onNavigationRequested","timestamp":1525203622},{"event":"page.onResourceReceived","timestamp":1525203622},"page.close",{"event":"page.onNavigationRequested","timestamp":1525203622},{"event":"page.onResourceReceived","timestamp":1525203622},{"event":"page.onUrlChanged","timestamp":1525203622}]}

@@ -1,0 +1,47 @@
+{
+  "name": "swarmer.io-agent",
+  "version": "0.0.0-alpha",
+  "description": "Swarmer.io - DOM Agent",
+  "main": "src/index.js",
+  "private": true,
+  "directories": {
+    "test": "tests",
+    "src": "src"
+  },
+  "scripts": {
+    "prestart": "rm -rf ./output/*.json",
+    "start": "babel-node src/index.js  --presets=env,stage-0",
+    "upgradeDeps": "ncu -u"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnerAiken/swarmer.io-agent.git"
+  },
+  "keywords": [
+    "swarmer",
+    "swarmer.io",
+    "agent"
+  ],
+  "author": "Conner Aiken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ConnerAiken/swarmer.io-agent/issues"
+  },
+  "homepage": "https://github.com/ConnerAiken/swarmer.io-agent#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "dockernode": "^0.1.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "jsonfile": "^4.0.0",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
+}
